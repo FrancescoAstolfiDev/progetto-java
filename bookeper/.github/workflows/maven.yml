@@ -1,0 +1,23 @@
+name: Java CI with Maven
+
+on:  # Trigger per push e pull request
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest  # OS per il build
+
+    steps:
+      - uses: actions/checkout@v4  # Scarica il codice
+
+      - name: Set up JDK 17  # Configura Java
+        uses: actions/setup-java@v3
+        with:
+          java-version: '17'
+          distribution: 'temurin'
+
+      - name: Build with Maven  # Compila e testa
+        run: mvn clean package
