@@ -7,37 +7,49 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="bookkeeper-server-tests-shaded" />
+        <module name="bookkeeper-common-allocator" />
+        <module name="bookkeeper-stats-utils" />
         <module name="codahale-metrics-provider" />
-        <module name="twitter-ostrich-provider" />
         <module name="bookkeeper-server-tests-shaded-test" />
         <module name="bookkeeper-common" />
-        <module name="twitter-science-provider" />
         <module name="http-server" />
         <module name="bookkeeper-stats-api" />
         <module name="bookkeeper-dist-server" />
         <module name="vertx-http-server" />
         <module name="bookkeeper-tools" />
         <module name="distributedlog-protocol" />
+        <module name="upgrade" />
         <module name="bookkeeper-dist-all" />
+        <module name="bkctl" />
         <module name="bookkeeper-server" />
         <module name="standalone" />
         <module name="circe-checksum" />
         <module name="distributedlog-common" />
+        <module name="metadata-stores-etcd" />
+        <module name="recovery-no-password" />
+        <module name="hostname-bookieid" />
         <module name="buildtools" />
         <module name="twitter-http-server" />
-        <module name="twitter-finagle-provider" />
         <module name="microbenchmarks" />
+        <module name="upgrade-direct" />
         <module name="distributedlog-core-shaded" />
+        <module name="yahoo-custom-version" />
         <module name="distributedlog-core" />
         <module name="bookkeeper-benchmark" />
         <module name="integration-tests-utils" />
+        <module name="bookkeeper-tools-framework" />
         <module name="scripts" />
+        <module name="hierarchical-ledger-manager" />
+        <module name="cpu-affinity" />
+        <module name="backward-compat-current-server-old-clients" />
+        <module name="bookkeeper-tools-ledger" />
         <module name="bookkeeper-proto" />
         <module name="smoke" />
         <module name="bookkeeper-server-shaded" />
         <module name="integration-tests-topologies" />
         <module name="bookkeeper-server-shaded-test" />
         <module name="dlfs" />
+        <module name="old-cookie-new-cluster" />
         <module name="prometheus-metrics-provider" />
         <module name="distributedlog-core-shaded-test" />
       </profile>
@@ -47,8 +59,6 @@
       <module name="backward-test" target="1.8" />
       <module name="bc-non-fips" target="1.8" />
       <module name="bk-grpc-name-resolver" target="1.8" />
-      <module name="bkctl" target="1.8" />
-      <module name="bookkeeper-common-allocator" target="1.8" />
       <module name="bookkeeper-perf" target="1.8" />
       <module name="bookkeeper-server-compat400" target="1.8" />
       <module name="bookkeeper-server-compat410" target="1.8" />
@@ -57,14 +67,8 @@
       <module name="bookkeeper-slogger-api" target="1.8" />
       <module name="bookkeeper-slogger-parent" target="1.8" />
       <module name="bookkeeper-slogger-slf4j" target="1.8" />
-      <module name="bookkeeper-stats-parent" target="1.8" />
-      <module name="bookkeeper-stats-utils" target="1.8" />
-      <module name="bookkeeper-tools-framework" target="1.8" />
-      <module name="bookkeeper-tools-ledger" target="1.8" />
-      <module name="bookkeeper-tools-parent" target="1.8" />
       <module name="cluster" target="1.8" />
       <module name="compat-deps" target="1.8" />
-      <module name="cpu-affinity" target="1.8" />
       <module name="hedwig-client" target="1.6" />
       <module name="hedwig-client-jms" target="1.6" />
       <module name="hedwig-protocol" target="1.6" />
@@ -74,8 +78,6 @@
       <module name="hedwig-server-compat420" target="1.6" />
       <module name="integration" target="1.8" />
       <module name="jetcd-core-shaded" target="1.8" />
-      <module name="metadata-drivers-parent" target="1.8" />
-      <module name="metadata-stores-etcd" target="1.8" />
       <module name="native-io" target="1.8" />
       <module name="native-library-common" target="1.8" />
       <module name="otel-metrics-provider" target="1.8" />
@@ -98,6 +100,9 @@
       <module name="stream-storage-tests-common" target="1.8" />
       <module name="tests-parent (3) (org.apache.bookkeeper.tests)" target="1.8" />
       <module name="testtools" target="1.8" />
+      <module name="twitter-finagle-provider" target="1.8" />
+      <module name="twitter-ostrich-provider" target="1.8" />
+      <module name="twitter-science-provider" target="1.8" />
     </bytecodeTargetLevel>
   </component>
   <component name="GreclipseSettings">
@@ -109,11 +114,11 @@
       <module name="all-versions-image" options="-Werror -Xlint:deprecation -Xlint:unchecked -Xpkginfo:always" />
       <module name="backward-test" options="-Werror -Xlint:deprecation -Xlint:unchecked -Xpkginfo:always" />
       <module name="bk-grpc-name-resolver" options="-parameters" />
-      <module name="bkctl" options="-parameters" />
+      <module name="bkctl" options="-Werror -Xlint:deprecation -Xlint:unchecked -Xpkginfo:always" />
       <module name="bookkeeper" options="-Werror -Xlint:deprecation -Xlint:unchecked -Xpkginfo:always" />
       <module name="bookkeeper-benchmark" options="-Werror -Xlint:deprecation -Xlint:unchecked -Xpkginfo:always" />
       <module name="bookkeeper-common" options="-Werror -Xlint:deprecation -Xlint:unchecked -Xpkginfo:always" />
-      <module name="bookkeeper-common-allocator" options="-parameters" />
+      <module name="bookkeeper-common-allocator" options="-Werror -Xlint:deprecation -Xlint:unchecked -Xpkginfo:always" />
       <module name="bookkeeper-dist" options="-Werror -Xlint:deprecation -Xlint:unchecked -Xpkginfo:always" />
       <module name="bookkeeper-dist-all" options="-Werror -Xlint:deprecation -Xlint:unchecked -Xpkginfo:always" />
       <module name="bookkeeper-dist-server" options="-Werror -Xlint:deprecation -Xlint:unchecked -Xpkginfo:always" />
@@ -133,19 +138,19 @@
       <module name="bookkeeper-slogger-parent" options="-parameters" />
       <module name="bookkeeper-slogger-slf4j" options="-parameters" />
       <module name="bookkeeper-stats-api" options="-Werror -Xlint:deprecation -Xlint:unchecked -Xpkginfo:always" />
-      <module name="bookkeeper-stats-parent" options="-parameters" />
+      <module name="bookkeeper-stats-parent" options="-Werror -Xlint:deprecation -Xlint:unchecked -Xpkginfo:always" />
       <module name="bookkeeper-stats-providers" options="-Werror -Xlint:deprecation -Xlint:unchecked -Xpkginfo:always" />
-      <module name="bookkeeper-stats-utils" options="-parameters" />
+      <module name="bookkeeper-stats-utils" options="-Werror -Xlint:deprecation -Xlint:unchecked -Xpkginfo:always" />
       <module name="bookkeeper-tools" options="-Werror -Xlint:deprecation -Xlint:unchecked -Xpkginfo:always" />
-      <module name="bookkeeper-tools-framework" options="-parameters" />
-      <module name="bookkeeper-tools-ledger" options="-parameters" />
-      <module name="bookkeeper-tools-parent" options="-parameters" />
+      <module name="bookkeeper-tools-framework" options="-Werror -Xlint:deprecation -Xlint:unchecked -Xpkginfo:always" />
+      <module name="bookkeeper-tools-ledger" options="-Werror -Xlint:deprecation -Xlint:unchecked -Xpkginfo:always" />
+      <module name="bookkeeper-tools-parent" options="-Werror -Xlint:deprecation -Xlint:unchecked -Xpkginfo:always" />
       <module name="buildtools" options="-Werror -Xlint:deprecation -Xlint:unchecked -Xpkginfo:always" />
-      <module name="circe-checksum" options="-Xlint:deprecation -Xlint:unchecked -Xpkginfo:always" />
+      <module name="circe-checksum" options="-Xlint:deprecation -Xlint:unchecked -Xpkginfo:always -h $PROJECT_DIR$/bookkeeper/circe-checksum/target/nar/javah-include" />
       <module name="cluster" options="-parameters" />
       <module name="codahale-metrics-provider" options="-Werror -Xlint:deprecation -Xlint:unchecked -Xpkginfo:always" />
       <module name="compat-deps" options="-Werror -Xlint:deprecation -Xlint:unchecked" />
-      <module name="cpu-affinity" options="-parameters -h $PROJECT_DIR$/bookkeeper/cpu-affinity/target/nar/javah-include" />
+      <module name="cpu-affinity" options="-Xlint:deprecation -Xlint:unchecked -Xpkginfo:always -h $PROJECT_DIR$/bookkeeper/cpu-affinity/target/nar/javah-include" />
       <module name="current-version-image" options="-Werror -Xlint:deprecation -Xlint:unchecked -Xpkginfo:always" />
       <module name="distributedlog" options="-Werror -Xlint:deprecation -Xlint:unchecked -Xpkginfo:always" />
       <module name="distributedlog-common" options="-Werror -Xlint:deprecation -Xlint:unchecked -Xpkginfo:always" />
@@ -169,8 +174,8 @@
       <module name="integration-tests-topologies" options="-Werror -Xlint:deprecation -Xlint:unchecked -Xpkginfo:always" />
       <module name="integration-tests-utils" options="-Werror -Xlint:deprecation -Xlint:unchecked -Xpkginfo:always" />
       <module name="jetcd-core-shaded" options="-parameters" />
-      <module name="metadata-drivers-parent" options="-parameters" />
-      <module name="metadata-stores-etcd" options="-parameters" />
+      <module name="metadata-drivers-parent" options="-Werror -Xlint:deprecation -Xlint:unchecked -Xpkginfo:always" />
+      <module name="metadata-stores-etcd" options="-Werror -Xlint:deprecation -Xlint:unchecked -Xpkginfo:always" />
       <module name="microbenchmarks" options="-Werror -Xlint:deprecation -Xlint:unchecked -Xpkginfo:always" />
       <module name="native-io" options="-parameters -h $PROJECT_DIR$/bookkeeper/native-io/target/nar/javah-include" />
       <module name="native-library-common" options="-parameters" />
